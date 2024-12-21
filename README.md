@@ -43,6 +43,12 @@ A web-based **Library Management System** built using **Django** to manage libra
 ## Screenshots
 
 ![Screenshot (502)](https://github.com/user-attachments/assets/c7aaeebc-6c88-4669-89db-1a2600fe5eed)
+
+
 ![image](https://github.com/user-attachments/assets/8a865ce1-2979-4601-a730-40f3b34f5d52)
+
+
 ![image](https://github.com/user-attachments/assets/c637402e-c399-4439-a2c7-7c272ff67bea)
+
+
 ![image](https://github.com/user-attachments/assets/63d7a463-9ed9-42e9-ac4e-ecf2e349facd)
