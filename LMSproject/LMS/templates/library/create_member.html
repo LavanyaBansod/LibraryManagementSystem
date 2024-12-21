@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save Member - Hogwarts Library</title>
+    <link rel="stylesheet" href="{% static 'css/styles_create_memb.css' %}">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-content">
+            <h1>Save Member Details</h1>
+            <p>Fill in the details below to add a new member to Hogwarts Library.</p>
+        </div>
+    </header>
+
+    <!-- Form Section -->
+    <main>
+        <section class="form-container">
+            <form method="post">
+                {% csrf_token %}
+                <div class="form-group">
+                    {{ form.as_p }}
+                </div>
+                <button type="submit" class="button submit-button">Save Member</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>© 2024 Hogwarts Library. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+
+
+<!-- <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Save Member</button>
+</form> -->

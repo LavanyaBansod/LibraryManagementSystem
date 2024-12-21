@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Member - Hogwarts Library</title>
+    <link rel="stylesheet" href="{% static 'css/styles_update_memb.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Update Member Information</h1>
+    </header>
+
+    <main>
+        <!-- Form to Update Member Information -->
+        <form method="POST">
+            {% csrf_token %}
+            
+            <div>
+                <label for="first_name">First Name:</label>
+                <input type="text" id="first_name" name="first_name" value="{{ member.first_name }}" disabled>
+            </div>
+            <div>
+                <label for="last_name">Last Name:</label>
+                <input type="text" id="last_name" name="last_name" value="{{ member.last_name }}" disabled>
+            </div>
+            <div>
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" value="{{ member.address }}">
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" value="{{ member.email }}">
+            </div>
+            <div>
+                <label for="phone_no">Phone Number:</label>
+                <input type="text" id="phone_no" name="phone_no" value="{{ member.phone_no }}">
+            </div>
+            <div>
+                <label for="account_no">Account Number:</label>
+                <input type="text" id="account_no" name="account_no" value="{{ member.account_no }}">
+            </div>
+            
+            <div>
+                <button type="submit">Save Changes</button>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>© 2024 Hogwarts Library. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hogwarts Library</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-content">
+            <h1>Welcome to Hogwarts Library</h1>
+            <p>Your magical resource for knowledge and wisdom!</p>
+            <img src="{% static 'images/library.jpg' %}" alt="Library Image" class="hero-image">
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <h2>Explore Our Magical Services</h2>
+        <p>Choose from the options below to begin your journey through knowledge.</p>
+        <div class="buttons-container">
+            <a href="/members/" class="button">View Members</a>
+            <a href="/members/create/" class="button">Create Members</a>
+            <a href="/members/update/" class="button">Update Member</a>
+            <a href="/view-books/" class="button">View All Books</a>
+            <a href="/issue-book/" class="button">Issue Book</a>
+            <a href="/return-book/" class="button">Return Book</a>
+            <a href="/fine-list/" class="button">Fine List</a>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>© 2024 Hogwarts Library. All rights reserved.</p>
+    </footer>
+</body>
+</html>
